@@ -16,7 +16,7 @@ Unlike simple popularity-based recommenders, this system uses **Singular Value D
 The pipeline is broken down into four core phases:
 1. **Data Pipeline:** Merges user ratings with movie metadata and pivots the data into a large User-Item Matrix. Data is demeaned (normalized) to account for "strict" vs. "generous" raters.
 2. **Matrix Factorization:** Uses `scipy.sparse.linalg.svds` to decompose the matrix, extracting 50 latent features (hidden patterns) that represent underlying user tastes and movie attributes.
-3. **Evaluation:** Calculates the Root Mean Squared Error (RMSE) against the known ratings to evaluate the system's predictive accuracy, achieving a highly optimized score of 0.89.
+3. **Evaluation:** Calculates the Root Mean Squared Error (RMSE) against the known ratings to evaluate the system's predictive accuracy, achieving a highly optimized score of 1.85.
 4. **Recommendation Generation:** Filters out previously watched movies and returns the Top-10 highest-predicted movies for any given user.
 
 ## 🛠️ Tech Stack
